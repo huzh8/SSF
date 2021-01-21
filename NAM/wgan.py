@@ -41,7 +41,7 @@ cuda = True if torch.cuda.is_available() else False
 Tensor = torch.cuda.FloatTensor if cuda else torch.FloatTensor
 
 parser = argparse.ArgumentParser()            
-parser.add_argument("--n_epochs", type=int, default=1000, help="number of epochs of training")
+parser.add_argument("--n_epochs", type=int, default=20000, help="number of epochs of training")
 parser.add_argument("--batch_size", type=int, default=256, help="size of the batches")
 parser.add_argument("--lr", type=float, default=0.0001, help="adam: learning rate")
 parser.add_argument("--n_critic", type=int, default=5, help="number of training steps for discriminator per iter")
